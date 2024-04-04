@@ -1,0 +1,43 @@
+@font-face {
+  font-family: bambi;
+  src: url(./font/X_BAMBI.TTF);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://www.nasa.gov/wp-content/uploads/2024/01/nameraurora-vir-2023309-lrg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: bambi;
+}
+
+.mainImg img {
+  height: 70vh;
+  width: auto;
+}
+
+.thumbImg img {
+  height: 10vh;
+  width: auto;
+  margin: 0px 10px;
+}
+
+.thumbImg img:hover {
+  cursor: pointer;
+}
