@@ -9,7 +9,8 @@
 }
 
 body {
-  height: 100vh;
+  height: 97vh;
+  padding: 1.5vh 1.5vw;
   background-image: url("https://www.nasa.gov/wp-content/uploads/2024/01/nameraurora-vir-2023309-lrg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -27,17 +28,79 @@ h2 {
   font-family: bambi;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
 .mainImg img {
-  height: 70vh;
-  width: auto;
+  height: 75vw;
+  width: 75vw;
+}
+
+.thumbImg {
+  display: flex;
+  justify-content: space-between;
 }
 
 .thumbImg img {
-  height: 10vh;
-  width: auto;
-  margin: 0px 10px;
+  height: 8vh;
+  margin: 0px 1vw;
+}
+
+.thumbImg img:focus {
+  outline: 2px solid red;
 }
 
 .thumbImg img:hover {
   cursor: pointer;
+}
+
+/*Media Queries */
+
+@media (min-width: 1441px) {
+  .mainImg img {
+    height: 70vh;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .mainImg img {
+    height: 70vh;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mainImg img {
+    height: 60vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainImg img {
+    height: 50vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .mainImg img {
+    height: 50vh;
+    width: 70vw;
+  }
+  .thumbImg img {
+    margin: 0px 2vw;
+  }
 }
