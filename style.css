@@ -16,7 +16,7 @@ body {
 .mainImg img {
   height: 100vh;
   width: 100vw;
-  display: block;
+  display: block; /*fixes the gap under the image*/
   object-fit: cover;
 }
 
@@ -35,27 +35,29 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
-  top: 10%;
-  width: 40vw;
-  margin: 0px 30vw;
+  font-size: 8px;
+  top: 12%;
+  width: 80vw;
+  margin: 0px 10vw;
 }
 
 .thumbImg {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   width: 100vw;
   display: flex;
   justify-content: center;
 }
 
 .thumbImg img {
-  height: 8vh;
-  width: 4vw;
-  margin: 0px 1vw;
+  height: 35px;
+  width: 35px;
+  margin: 0px 2vw;
+  z-index: 1;
 }
 
-.thumbImg img:focus {
+.thumbImg img:focus,
+#cat-button:focus {
   outline: 2px solid red;
 }
 
@@ -63,4 +65,138 @@ h2 {
   cursor: pointer;
 }
 
+.thumbImg img:active {
+  outline: none;
+}
+
+.cat-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px; /*places container so that it starts at top*/
+}
+
+#cat-image {
+  height: 150px;
+  width: 150px;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#cat-button {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  background-image: url(./assets/cat.png);
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+
+#cat-button:hover {
+  cursor: pointer;
+}
+
+#cat-button:active {
+  transform: translateY(5px);
+  outline: none;
+}
+
 /*Media Queries */
+
+@media (min-width: 320px) {
+  h2 {
+    font-size: 12px;
+  }
+  .thumbImg img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .thumbImg img {
+    height: 70px;
+    width: 70px;
+  }
+  #cat-button {
+    height: 50px;
+    width: 50px;
+  }
+  #cat-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  #cat-button {
+    height: 60px;
+    width: 60px;
+    bottom: 5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    top: 14%;
+    font-size: 20px;
+  }
+  .thumbImg {
+    bottom: 5%;
+  }
+  .thumbImg img {
+    height: 90px;
+    width: 90px;
+  }
+  #cat-button {
+    height: 80px;
+    width: 80px;
+  }
+  #cat-image {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 2560px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .thumbImg img {
+    height: 110px;
+    width: 110px;
+  }
+  #cat-button {
+    height: 100px;
+    width: 100px;
+  }
+  #cat-image {
+    height: 400px;
+    width: 400px;
+  }
+}
