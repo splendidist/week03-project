@@ -16,11 +16,15 @@ Handle user interaction
 - Used JavaScript to display the larger image when a thumbnail is selected
 - Used JavaScript to navigate between images using the keyboard (tab, enter)
 
-Stretch goals
-🏹 Handle user interaction with keyboard only (as if they have no mouse). The user is able to use the left and right arrows to navigate the thumbnails.
-🏹 Use your operating system's voiceover tools or a Screen Reader to have the computer announce the alt text of the selected image - I tested out using narrator, a screen-reading application that is built into Windows. This screen reader read out the alt text for my thumbnails.
+🏹 Stretch goals
+
+- Handle user interaction with keyboard only (as if they have no mouse). The user is able to use the left and right arrows to navigate the thumbnails.
+- Use your operating system's voiceover tools or a Screen Reader to have the computer announce the alt text of the selected image - I tested out using narrator, a screen-reading application that is built into Windows. This screen reader read out the alt text for my thumbnails.
+- I used js to make the h1 and h2 update to be a relevant title and description for any image that is selected.
 
 🎯 Were there any requirements or goals that you were not quite able to achieve?
+
+- A goal I wanted to achieve was to use an API to allow the user to generate a random space-themed image.
 
 🎯 If so, could you please tell us what was it that you found difficult about these tasks?
 
@@ -46,4 +50,4 @@ Stretch goals
 
 🪐 Requesting feedback about a specific part of your submission.
 
-Could I please have some feedback about my left and right arrow key events, and if there is a way to clean this code as the function was very big. Could I also have some feedback on maybe why my thumbnails have outlines when they are clicked, when this should only occur when they are focused.
+- Could I please have some feedback about my left and right arrow key events, and if there is a way to clean this code as the function was very big. Could I also have some feedback on maybe why my thumbnails have outlines when they are clicked, when this should only occur when they are focused.
